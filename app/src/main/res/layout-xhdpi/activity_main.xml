@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="10dp"
+        android:text="Vistula-IRremote"
+        android:textSize="24sp"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/remotepower"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/onoff" />
+
+    <ImageView
+        android:id="@+id/remoteoff"
+        android:layout_width="64dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/off"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/remotemenu"
+        android:layout_width="70dp"
+        android:layout_height="76dp"
+        android:layout_alignTop="@+id/remotepower"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginRight="147dp"
+        android:src="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/remotesource"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/remotepower"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/remoteback"
+        android:layout_toLeftOf="@+id/remoteback"
+        android:layout_toEndOf="@id/remotepower"
+        android:layout_toRightOf="@id/remotepower"
+        android:src="@drawable/saurce" />
+
+    <ImageView
+        android:id="@+id/remotechprev"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="123dp"
+        android:layout_marginRight="123dp"
+        android:layout_marginBottom="111dp"
+        android:src="@drawable/down" />
+
+    <ImageView
+        android:id="@+id/remotechnext"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/remoteok"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-160dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:src="@drawable/up" />
+
+    <ImageView
+        android:id="@+id/remoteback"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/remotepower"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/remoteok"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/remotechprev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="9dp"
+        android:gravity="center"
+        android:text="OK"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/remoteright"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="205dp"
+        android:layout_toEndOf="@+id/remoteok"
+        android:layout_toRightOf="@+id/remoteok"
+        android:src="@drawable/right" />
+
+    <ImageView
+        android:id="@+id/remoteleft"
+        android:layout_width="84dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="198dp"
+        android:layout_toStartOf="@+id/remoteok"
+        android:layout_toLeftOf="@+id/remoteok"
+        android:src="@drawable/left" />
+
+    <ImageView
+        android:id="@+id/vistula"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-199dp"
+        android:layout_marginRight="-199dp"
+        android:layout_marginBottom="555dp"
+        android:layout_toStartOf="@+id/remoteok"
+        android:layout_toLeftOf="@+id/remoteok"
+        android:src="@drawable/vistula" />
+
+
+</RelativeLayout>
